@@ -1,7 +1,11 @@
 import React from 'react';
 
-class Comment extends React.Component {
+const Comment = (props) => {
+    const { text } = props;
 
+    return (
+        <span>{text}</span>
+    );
 }
 
 export default Comment;
